@@ -1,0 +1,7 @@
+name: 'Photographer Theme'
+description: 'Кастомный шаблон для портфолио October'
+author: Azat
+form: fields.yaml
+
+require:
+  - rainlab.blog

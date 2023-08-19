@@ -1,0 +1,24 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 7
+noPostsMessage = "No posts found"
+sortOrder = "random"
+categoryPage = "about"
+postPage = "blog-post"
+==
+<!-- Hero section -->
+<div class="hero-slider owl-carousel">
+	{% for post in posts %}
+	<div>
+		{% for image in post.featured_images|slice(0,1) %}
+		<!-- get image -->
+		<div class="hero-item portfolio-item set-bg" data-setbg="{{ image.path }}">
+			<a href="{{ post.url }}" class="hero-link">
+				<h4>{{ post.title }}</h4>
+			</a>
+		</div>
+		{% endfor %}
+
+	</div>
+	{% endfor %}
+</div>

@@ -1,0 +1,227 @@
+tabs:
+    fields:
+        site_title:
+            tab: General
+            label: Заголовок
+            type: text
+            default: Photograper Colorlib
+            comment: Заголовок сайта
+        site_logo:
+            tab: General
+            label: Лого сайта
+            comment: Размер (233px x 21px)
+            type: mediafinder
+            mode: image
+            imageWidth: 233
+            imageHeight: 21
+        intro_social_section:
+            tab: General
+            label: Footer
+            type: section
+        footer:
+            tab: General
+            label: Footer
+            type: text
+            default: "Footer"
+            comment: Текст для footer
+        footer_social_menu:
+            tab: General
+            label: Видимость иконок Социальных сетей сетей
+            type: switch
+            default: true
+
+        intro_section:
+            tab: Интро
+            label: Раздел интро
+            type: section
+        intro_homepage_section:
+            tab: Интро
+            label: Видимость раздела
+            type: switch
+            default: true
+        intro_headline:
+            tab: Интро
+            label: Заголовок
+            type: text
+            default: My name is Sam. I’m a photographer
+        intro_text:
+            tab: Интро
+            label: Описание
+            type: textarea
+            size: large
+            default: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis commodo viverra maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        intro_portfolio:
+            tab: Интро
+            label: Текст ссылки
+            type: text
+            default: Take a look @my portfolio
+        intro_skills_section:
+            tab: Интро
+            label: Skills
+            type: section
+        intro_progress_bar_percentage_1:
+            tab: Интро
+            label: Процент
+            type: text
+            span: right
+            default: 75
+        intro_progress_bar_item_1:
+            tab: Интро
+            label: Умение 1
+            type: text
+            span: left
+            default: Nature
+        intro_progress_bar_percentage_2:
+            tab: Интро
+            label: Процент
+            type: text
+            span: right
+            default: 100
+        intro_progress_bar_item_2:
+            tab: Интро
+            label: Умение 2
+            type: text
+            span: left
+            default: Passion
+        intro_progress_bar_percentage_3:
+            tab: Интро
+            label: Процент
+            type: text
+            span: right
+            default: 90
+        intro_progress_bar_item_3:
+            tab: Интро
+            label: Умение 3
+            type: text
+            span: left
+            default: Portrait
+            
+        about_photo:
+            tab: About
+            label: Фото
+            comment: Размер (e.g. 950 x 835)
+            type: fileupload
+            mode: image
+            imageWidth: 552
+            imageHeight: 310
+        about_us_headline:
+            tab: About
+            label: Заголовок
+            type: text
+            default: About me. Sam Smith
+        about_us_text:
+            tab: About
+            label: Текст
+            type: textarea
+            size: medium
+            default: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ac-cumsan lacus vel facilisis commodo viverra maecenas. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum susp endisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        about_clients_section:
+            tab: About
+            label: Clients
+            type: section
+        about_clients_headline:
+            tab: About
+            label: Clients заголовок
+            type: text
+            default: Clients
+        about_clients_text:
+            tab: About
+            label: Clients описание
+            type: text
+            default: Company INC, Management INc, Photo album INC, Magnum Express, Fachion Gala, Unnamed,
+        about_editorials_section:
+            tab: About
+            label: Editorials
+            type: section
+        about_editorials_headline:
+            tab: About
+            label: Editorials заголовок
+            type: text
+            default: Editorials
+        about_editorials_text:
+            tab: About
+            label: Editorials описание
+            type: text
+            default: Vougue, Elle, Company INC, Management INc, Photo album INC, Fashion Week, Fachion Gala, Unnamed, Vanity Fair, Vougue IT
+        about_contact_section:
+            tab: About
+            label: Contact Button
+            type: section
+        about_contact_button:
+            tab: About
+            label: Текст кнопки
+            type: text
+            span: left
+            default: Contact Me
+        about_button_link:
+            tab: About
+            label: Ссылка кнопки
+            type: text
+            span: right
+            default: 'about'
+        skills__section:
+            tab: About
+            label: Skills section
+            type: section
+        skills_about_page:
+            tab: About
+            label: Видимость раздела
+            type: switch
+            default: true
+        about_progress_bar_percentage_1:
+            tab: About
+            label: Процент
+            type: text
+            span: right
+            default: 100
+        about_progress_bar_item_1:
+            tab: About
+            label: Умение 1
+            type: text
+            span: left
+            default: Passion
+        about_progress_bar_percentage_2:
+            tab: About
+            label: Процент
+            type: text
+            span: right
+            default: 75
+        about_progress_bar_item_2:
+            tab: About
+            label: Умение 2
+            type: text
+            span: left
+            default: Models
+        about_progress_bar_percentage_3:
+            tab: About
+            label: Процент
+            type: text
+            span: right
+            default: 25
+        about_progress_bar_item_3:
+            tab: About
+            label: Умение 3
+            type: text
+            span: left
+            default: Studio
+        about_progress_bar_percentage_4:
+            tab: About
+            label: Процент
+            type: text
+            span: right
+            default: 50
+        about_progress_bar_item_4:
+            tab: About
+            label: Умение 4
+            type: text
+            span: left
+            default: Nature
+        services_about_page_section:
+            tab: About
+            label: Services section
+            type: section
+        services_about_page:
+            tab: About
+            label: Видимость раздела
+            type: switch
+            default: true

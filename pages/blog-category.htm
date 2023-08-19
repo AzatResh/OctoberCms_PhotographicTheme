@@ -1,0 +1,42 @@
+title = "Blog Category"
+url = "/blog/category/:slug/:page?"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/category"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<?php
+function onEnd()
+{
+    if ($this->category)
+        $this->page->title = $this->category->name;
+}
+
+?>
+==
+{% if not category %}
+    <h2>Category not found</h2>
+{% else %}
+    <div class="container about">
+        <div class="row">
+            <div class="col-sm-9">
+                {% component 'blogPosts' %}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+{% endif %}

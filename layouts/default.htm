@@ -1,0 +1,79 @@
+description = "Default Layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="title" content="{{ this.page.meta_title }}">
+	<meta name="description" content="{{ this.page.meta_description }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="OctoberCMS">
+
+	<title>{% if this.page.title %}{{ this.page.title}} &#124; {% endif %}{{ this.theme.site_title }}</title>
+
+    <!-- Icon -->
+	<link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+
+	<!-- Google font -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+		rel="stylesheet">
+
+	<!-- Css -->
+	<link rel="stylesheet" href="{{ [
+		'assets/css/bootstrap.min.css',
+		'assets/css/font-awesome.min.css',
+		'assets/css/magnific-popup.css',
+		'assets/css/slicknav.min.css',
+		'assets/css/owl.carousel.min.css',
+		'assets/css/style.css'
+		]|theme }}">
+	{% styles %}
+
+</head>
+
+
+<body>
+
+	<!-- Header  -->
+	{% partial 'header' %}
+
+	<!-- Content -->
+	{% page %}
+
+	<!-- Footer -->
+	{% partial "footer" %}
+
+	<!-- Search -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="{{ [
+		'assets/js/jquery-3.2.1.min.js',
+		'assets/js/bootstrap.min.js',
+		'assets/js/jquery.slicknav.min.js',
+		'assets/js/owl.carousel.min.js',
+		'assets/js/jquery.magnific-popup.min.js',
+		'assets/js/circle-progress.min.js',
+		'assets/js/mixitup.min.js',
+		'assets/js/instafeed.min.js',
+		'assets/js/masonry.pkgd.min.js',
+		'assets/js/main.js'
+		]|theme }}">
+		</script>
+
+	{% framework extras %}
+	{% scripts %}
+</body>
+
+</html>
